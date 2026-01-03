@@ -5,7 +5,5 @@ from home import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
-
-# def About(request):
-#     return render(request,'Base/about.html')
+    path('about/', views.About, name='about')
 ]

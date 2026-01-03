@@ -10,5 +10,5 @@ def home(request):
 
 
 
-# def About(request):
-#     return render(request,'Base/about.html')
+def About(request):
+    return render(request,'Base/about.html')
