@@ -8,3 +8,7 @@ class Post(models.Model):
     content = models.TextField(max_length=200)
     time = models.DateTimeField(default=timezone.now)
     auther = models.ForeignKey(User,on_delete=models.CASCADE)
+    
+
+    def __str__(self):
+        return self.title
